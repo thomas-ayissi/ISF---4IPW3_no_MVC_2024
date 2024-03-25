@@ -65,6 +65,8 @@
 </script>
 
 <button id="fct_named">fonction nommée</button>
+<button id="fct_anonymous">fonction anonyme</button>
+
 <script>
 	function display_brol()
 	{
@@ -74,6 +76,13 @@
 	document.getElementById("fct_named").addEventListener(
 			"click",
 			display_brol
+	);
+
+	document.getElementById("fct_anonymous").addEventListener(
+			"click",
+			function() {
+				alert("coucou anonymous");
+			}
 	);
 </script>
 
